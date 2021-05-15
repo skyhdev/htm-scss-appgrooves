@@ -1,0 +1,63 @@
+@import "header";
+@import "sidebar";
+@import "main";
+@import "footer";
+
+body {
+    background: #F7F7F7;
+    font-family: 'Roboto';
+
+    .container {
+        @media screen and (max-width: 575px) {
+            padding: 0;
+        }
+    }
+}
+
+.show-mobile {
+    @media screen and (min-width: 768px) {
+        display: none !important;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        display: block;
+    }
+}
+
+.show-desktop {
+    @media screen and (max-width: 767.98px) {
+        display: none !important;
+    }
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    color: #3981E5;
+}
+
+.bg-grey {
+    background: #F9F9F9;
+}
+
+.bg-white {
+    background: #FFFFFF;
+}
+
+.bg-blue {
+    background: #3981E5;
+}
+
+.text-grey {
+    color: #737373;
+}
+
+.text-blue {
+    color: #3981E5;
+}
+
+.border-bottom-blue {
+    border-bottom: 2px solid #3981E5;
+}
